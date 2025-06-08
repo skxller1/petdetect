@@ -1,3 +1,5 @@
+-- sorry for leaking the entire script, too bad 
+
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
@@ -97,7 +99,7 @@ end
 if Tab and Tab.AddToggle then
 	Tab:AddToggle("PetEggDetectESP", {
 		Title = "Pet Hatch Detector",
-		Description = "Smoke Corn",
+		Description = "eggs need to be ready, then server hop until you got the pet you want.",
 		Default = false
 	}):OnChanged(function(state)
 		espEnabled = state
